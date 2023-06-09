@@ -18,7 +18,7 @@ const metadataTemplate = {
 let tokenUris = [
     "ipfs://QmPHPmMc7mraYGkmk13zLqzkcJTn5QMH4K6J54oyHUzVky",
     "ipfs://Qmb5tjsnBbHjE65zoMypYvQucm1j131E9b3T9VoqgtCWKA",
-    "ipfs://QmeCNHHSyRsMwQYtPDBNZAPRGESTJaZ9dtWKRgqHd5U2Sb",
+    "ipfs://QmULn8CU3QegftZZ6GBTrqSEckaA2eLX1HqAi1sPh5FNEu",
 ]
 
 module.exports = async (hre: HardhatRuntimeEnvironment) => {

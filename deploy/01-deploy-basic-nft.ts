@@ -24,4 +24,4 @@ module.exports = async (hre: HardhatRuntimeEnvironment) => {
     }
 }
 
-module.exports.tags = ["all", "basic"]
+module.exports.tags = ["all", "basic", "main"]

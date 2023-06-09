@@ -30,7 +30,7 @@ module.exports = async function (hre: HardhatRuntimeEnvironment) {
         const randomIpfsMintTx = await randomIpfsNft.requestNft({ value: mintFee.toString() })
         const RandomIpfsMintTxReceipt = await randomIpfsMintTx.wait(1)
         if (isDevChain) {
-            const requestId = RandomIpfsMintTxReceipt?.events?.[0]?.args?.requestId.toString()
+            const requestId = RandomIpfsMintTxReceipt?.events?.[1]?.args?.requestId.toString()
             const vrfCoordinatorV2Mock: VRFCoordinatorV2Mock = await ethers.getContract(
                 "VRFCoordinatorV2Mock",
                 deployer
@@ -47,3 +47,5 @@ module.exports = async function (hre: HardhatRuntimeEnvironment) {
     await dynamicSvgNftMintTx.wait(1)
     console.log(`DynamicSvgNft index 0 has tokenUri: ${await dynamicSvgNft.tokenURI(0)}`)
 }
+
+module.exports.tags = ["all", "mint", "main"]

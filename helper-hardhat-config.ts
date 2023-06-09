@@ -29,6 +29,7 @@ export const networkConfig: networkConfigInfo = {
         subscriptionId: "0",
         callbackGasLimit: 500000,
         mintFee: "10000000000000000",
+        ethUsdPriceFeed: "0x694AA1769357215DE4FAC081bf1f309aDC325306",
     },
 }
 
