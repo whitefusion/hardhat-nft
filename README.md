@@ -1,7 +1,7 @@
 # NFT
 3 contracts
-1. basic nft  ✅
-2. random ipfs nft ✅
+1. basic nft  
+2. random ipfs nft 
 
 pros: cheap 
 
